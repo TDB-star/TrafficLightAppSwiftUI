@@ -13,6 +13,7 @@
 		5D10BFA026E762E2000D6FE7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D10BF9F26E762E2000D6FE7 /* Preview Assets.xcassets */; };
 		5D10BFA826E764B4000D6FE7 /* ColorCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D10BFA726E764B4000D6FE7 /* ColorCircle.swift */; };
 		5D10BFAA26E771E1000D6FE7 /* SpecialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D10BFA926E771E1000D6FE7 /* SpecialButton.swift */; };
+		5DA330AE26EA637800D41CA8 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA330AD26EA637800D41CA8 /* Button.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		5D10BFA126E762E2000D6FE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D10BFA726E764B4000D6FE7 /* ColorCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCircle.swift; sourceTree = "<group>"; };
 		5D10BFA926E771E1000D6FE7 /* SpecialButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialButton.swift; sourceTree = "<group>"; };
+		5DA330AD26EA637800D41CA8 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				5D10BF9826E762E0000D6FE7 /* TrafficLightAppSwiftUIApp.swift */,
 				5D10BF9A26E762E0000D6FE7 /* ContentView.swift */,
 				5D10BFA926E771E1000D6FE7 /* SpecialButton.swift */,
+				5DA330AD26EA637800D41CA8 /* Button.swift */,
 				5D10BFA726E764B4000D6FE7 /* ColorCircle.swift */,
 				5D10BF9C26E762E2000D6FE7 /* Assets.xcassets */,
 				5D10BFA126E762E2000D6FE7 /* Info.plist */,
@@ -144,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DA330AE26EA637800D41CA8 /* Button.swift in Sources */,
 				5D10BF9B26E762E0000D6FE7 /* ContentView.swift in Sources */,
 				5D10BF9926E762E0000D6FE7 /* TrafficLightAppSwiftUIApp.swift in Sources */,
 				5D10BFA826E764B4000D6FE7 /* ColorCircle.swift in Sources */,

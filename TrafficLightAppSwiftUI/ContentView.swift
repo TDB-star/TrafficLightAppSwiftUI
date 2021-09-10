@@ -10,36 +10,37 @@ import SwiftUI
 struct ContentView: View {
     
     @ State var buttonText = true
-    @ State var redCircle = ColorCircle(color: .red, opacity: 0.3)
-    @ State var yellowCircle = ColorCircle(color: .yellow, opacity: 0.3)
-    @ State var greenCircle = ColorCircle(color: .green, opacity: 0.3)
     @ State var color: Color = .red
+    @ State private var redLineState = 0.3
+    @ State private var yellowLineState = 0.3
+    @ State private var greenLineState = 0.3
     
     var body: some View {
         
         ZStack {
             Color.black.edgesIgnoringSafeArea(.all)
             VStack {
-                redCircle
-                yellowCircle
-                greenCircle
+                ColorCircle(color: .red, opacity: redLineState)
+                ColorCircle(color: .yellow, opacity: yellowLineState)
+                ColorCircle(color: .green, opacity: greenLineState)
                 Spacer()
                 Button(action: {
                     buttonText = false
                     switch color {
                     case .red:
-                        redCircle = ColorCircle(color:.red, opacity: 1)
-                        yellowCircle = ColorCircle(color: .yellow, opacity: 0.3)
-                        greenCircle = ColorCircle(color: .green, opacity: 0.3)
+                        redLineState = 1
+                        yellowLineState = 0.3
+                        greenLineState = 0.3
                         color = .yellow
                     case .yellow:
-                        redCircle = ColorCircle(color: .red, opacity: 0.3)
-                        yellowCircle = ColorCircle(color: .yellow, opacity: 1)
-                        greenCircle = ColorCircle(color: .green, opacity: 0.3)
+                        redLineState = 0.3
+                        yellowLineState = 1
+                        greenLineState = 0.3
                         color = .green
-                    default: redCircle = ColorCircle(color: .red, opacity: 0.3)
-                        yellowCircle = ColorCircle(color: .yellow, opacity: 0.3)
-                        greenCircle = ColorCircle(color: .green, opacity: 1)
+                    default:
+                        redLineState = 0.3
+                        yellowLineState = 0.3
+                        greenLineState = 1
                         color = .red
                     }
                 })
